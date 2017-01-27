@@ -6,7 +6,6 @@ import requests
 import json
 import csv
 import datetime
-import os
 
 TCP_IP = '127.0.0.1'
 TCP_PORT = 6258 
