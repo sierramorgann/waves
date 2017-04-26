@@ -11,6 +11,8 @@
 #include <EthernetUdp2.h>
 #include <SPI.h>
 
+int ENABLE = LOW;
+
 #define ENABLE 10
 #define STEP 9
 #define DIR 8
@@ -33,9 +35,13 @@ EthernetUDP Udp;
 
 float height;
 int period;
-int sec = 12; // test representation of period
+int sec = 6; // test representation of period
 float ft = 2; // test representation of height
 int interval;      //turn into miliseconds
+
+// Generally, you should use "unsigned long" for variables that hold time
+// The value will quickly become too large for an int to store
+unsigned long previousMillis = 0;        // will store last time LED was updated
 
 void setup()
 {
@@ -47,30 +53,30 @@ void setup()
   pinMode(STEP, OUTPUT);
   pinMode(DIR, OUTPUT);
   motor.setSpeed(1);
-  //Serial.println();
 }
 
 void delayTime() {
-  if (sec <= 5 ) { // fastest speed : 2.5 sec / foot
-    interval = 16; 
+  if (period <= 5 ) { // fastest speed : 2.5 sec / foot
+    interval = 16;
   }
-  if (sec > 5 && sec <= 7) { // faster speed : 5 sec / foot
-    interval = 31; 
+  else if (period > 5 && sec <= 7) { // faster speed : 5 sec / foot
+    interval = 31;
   }
-  if (sec > 7 && sec <= 10) { // average speed : 10 sec / foot
-    interval = 62; 
+  else if (period > 7 && sec <= 10) { // average speed : 10 sec / foot
+    interval = 62;
   }
-  if (sec > 10) { // slower speed : 20 sec / foot
-    interval = 125; 
+  else if (period > 10) { // slower speed : 20 sec / foot
+    interval = 125;
   }
-  else { // slowest speed as default 
-    interval = 1000; //represents 1 full second delay for one step 
+  else { // slowest speed as default
+    interval = 1000; //represents 1 full second delay for one step
   }
 }
 
 void stepNow(int totalSteps) {
   int i;
   delayTime();
+  Serial.println(interval);
   for (i = 0; i < totalSteps; ++i) {
     digitalWrite(STEP, HIGH);
     delay(interval);
@@ -78,14 +84,24 @@ void stepNow(int totalSteps) {
   }
 }
 
-void walkRight() {
-  digitalWrite(DIR, HIGH);
-  stepNow(STEPS_PER_ROTATION * ft);
-}
+//void walkRight() {
+//  digitalWrite(DIR, HIGH);
+//  stepNow(STEPS_PER_ROTATION * ft);
+//}
+//
+//void walkLeft() {
+//  digitalWrite(DIR, LOW);
+//  stepNow(STEPS_PER_ROTATION * ft);
+//}
 
-void walkLeft() {
-  digitalWrite(DIR, LOW);
-  stepNow(STEPS_PER_ROTATION * ft);
+void walkBothDirections() {
+  Serial.println(F("dir LOW"));
+  digitalWrite(DIR,LOW);
+  stepNow(STEPS_PER_ROTATION * height);
+  
+  Serial.println(F("dir HIGH"));
+  digitalWrite(DIR,HIGH);
+  stepNow(STEPS_PER_ROTATION * height);
 }
 
 void loop () {
@@ -116,7 +132,21 @@ void loop () {
     }
   }
 
-  walkLeft();
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    // save the last time you blinked the LED
+    previousMillis = currentMillis;
+
+    // if the LED is off turn it on and vice-versa:
+    if (period > 0) {
+      walkBothDirections();
+    } else {
+      //Serial.println("there was an error with the stepper motor");
+    }
+  }
 }
+
+
 
 
