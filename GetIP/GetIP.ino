@@ -59,10 +59,10 @@ void delayTime() {
   if (period <= 5 ) { // fastest speed : 2.5 sec / foot
     interval = 16;
   }
-  else if (period > 5 && sec <= 7) { // faster speed : 5 sec / foot
+  else if (period > 5 && period <= 7) { // faster speed : 5 sec / foot
     interval = 31;
   }
-  else if (period > 7 && sec <= 10) { // average speed : 10 sec / foot
+  else if (period > 7 && period <= 10) { // average speed : 10 sec / foot
     interval = 62;
   }
   else if (period > 10) { // slower speed : 20 sec / foot
@@ -142,7 +142,7 @@ void loop () {
     if (period > 0) {
       walkBothDirections();
     } else {
-      //Serial.println("there was an error with the stepper motor");
+      Serial.println("there was an error with the stepper motor");
     }
   }
 }
