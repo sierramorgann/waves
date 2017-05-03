@@ -10,7 +10,7 @@ from OSC import OSCClient, OSCMessage
 
 #umpqua off shore bouey wave height in feet and the period of the wave in seconds
 
-url = 'http://www.ndbc.noaa.gov/data/latest_obs/46229.rss'
+url = 'http://www.ndbc.noaa.gov/data/latest_obs/46225.rss'
 source = urllib.urlopen(url)
 content = source.read()
 source.close()
@@ -34,7 +34,7 @@ print(secData)
 def timeStamped(fname, fmt='%Y-%m-%d-%H-%M-%S_{fname}'):
     return datetime.datetime.now().strftime(fmt).format(fname=fname)	
 
-    # /Users/sierramorgan/Desktop/waves/
+    #/Users/sierramorgan/Desktop/waves/
 
 with open('/Users/sierramorgan/Desktop/waves/waves_data.csv','w') as data_out:
     writer=csv.writer(data_out)    
@@ -44,5 +44,5 @@ client = OSCClient()
 client.connect( ('10.0.1.3', 4380) )
 msg = OSCMessage("/send")
 msg.append(ftData)
-msg.append(secData)
+msg.append(5)
 client.send(msg)

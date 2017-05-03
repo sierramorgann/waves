@@ -1,1 +1,5 @@
 
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 26, in <module>
+    ftData = float(feet)
+ValueError: could not convert string to float: 
