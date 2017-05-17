@@ -1,3 +1,7 @@
+// Need apple air tower connected to router for ethernet network between computer and arduino 
+// make sure both computer and arduino are listening on the same port
+// start the plist in terminal to run the python script scraper.py every hour 
+
 #include <Stepper.h>
 
 #include <Arduino.h>
@@ -32,6 +36,7 @@ byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 //the IP address for the shield:
 byte ip[] = { 10, 0, 1 , 3 };
 
+//MAKE SURE THIS PORT MATCHES WITH COMPUTER PORT
 const unsigned int localPort = 4380;      // local port to listen on
 
 // buffers for receiving and sending data
@@ -50,10 +55,13 @@ unsigned long previousMillis = 0;        // will store last time the motor was u
 
 void setup()
 {
+  //start the ethernet connection 
   Ethernet.begin(mac, ip);
   Udp.begin(localPort);
+  //start the communication port
   Serial.begin(57600);
 
+  // These pins are set above to send instructions to the arduino to operate the stepper motor
   pinMode(ENABLE, OUTPUT);
   pinMode(STEP, OUTPUT);
   pinMode(DIR, OUTPUT);
@@ -63,6 +71,9 @@ void setup()
 
   //  motor.setSpeed(1);
 }
+
+// This function calculates the delay in seconds to make sure the wave makes its full peak and flat line in the 
+// directed amount of time read in from the OSC data (not 100% acurate, but whatever the data is an averaged num)
 
 void delayTime() {
   if (period <= 5 ) { // fastest speed : 2.5 sec / foot
@@ -82,6 +93,8 @@ void delayTime() {
   }
 }
 
+// Controls the stepper motor 
+
 void stepNow(int totalSteps) {
   digitalWrite(MS1, HIGH); //Pull MS1,MS2, and MS3 high to set logic to 1/16th microstep resolution
   digitalWrite(MS2, LOW);
@@ -96,6 +109,8 @@ void stepNow(int totalSteps) {
   }
 }
 
+// if you just want to move the stepper in one direction call either of these functions
+
 //void walkRight() {
 //  digitalWrite(DIR, HIGH);
 //  stepNow(STEPS_PER_ROTATION * ft);
@@ -105,6 +120,9 @@ void stepNow(int totalSteps) {
 //  digitalWrite(DIR, LOW);
 //  stepNow(STEPS_PER_ROTATION * ft);
 //}
+
+
+//move the stepper motor one direction and then back the other direction (this creates the wave effect)
 
 void walkBothDirections() {
   Serial.println(F("dir LOW"));
@@ -116,12 +134,16 @@ void walkBothDirections() {
   stepNow(STEPS_PER_ROTATION * height);
 }
 
+
 void loop () {
+  
+  //Gets OSC data over ethernet port from python script
   OSCMessage msg;
   int packetSize = Udp.parsePacket();
   // miliseconds will always be greater than interval... currentMillis will get reset to 0 every loop
   unsigned long currentMillis = millis();
 
+  //wraps the OSC function in a time wrapper so the data gets updated almost immediately when there is new data coming in  
   if (currentMillis - previousMillis >= interval) {
     //set the previous mills to current to reset the time
     previousMillis = currentMillis;
