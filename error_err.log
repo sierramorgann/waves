@@ -43,3 +43,303 @@ Traceback (most recent call last):
   File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
     for res in getaddrinfo(host, port, 0, SOCK_STREAM):
 IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
+Traceback (most recent call last):
+  File "/Users/sierramorgan/Desktop/waves/scraper.py", line 14, in <module>
+    source = urllib.urlopen(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 350, in open_http
+    h.endheaders(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1049, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 893, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 855, in send
+    self.connect()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 832, in connect
+    self.timeout, self.source_address)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 557, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno 8] nodename nor servname provided, or not known
